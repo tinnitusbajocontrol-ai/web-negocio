@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad de Acúfenos</title>
+  <style>
+    :root {
+      --azul-oscuro: #16324f;
+      --azul-medio: #2f5d7c;
+      --azul-claro: #e8f1f6;
+      --blanco: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--azul-claro);
+      color: var(--azul-oscuro);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      background: var(--blanco);
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--azul-medio);
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--blanco);
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .gerente {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .gerente img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--azul-claro);
+    }
+
+    .gerente-info h2 {
+      margin: 0 0 8px;
+    }
+
+    .gerente-info p {
+      margin: 4px 0;
+      color: #444;
+    }
+
+    .contacto {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 18px;
+      background: var(--azul-medio);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--azul-oscuro);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .gerente {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Unidad de Acúfenos Logo">
+    <h1>Unidad de Acúfenos</h1>
+    <p>Evaluación, tratamiento y acompañamiento especializado</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card gerente">
+      <!-- FOTO DE LA GERENTE -->
+      <img src="gerente.jpg" alt="Gerente de la Unidad">
+
+      <div class="gerente-info">
+        <h2>Dra. Nombre Apellido</h2>
+        <p>Directora de la Unidad de Acúfenos</p>
+        <p>Especialista en audiología y rehabilitación auditiva</p>
+        <p><strong>Centro de trabajo:</strong> Clínica / Hospital / Centro Médico</p>
+      </div>
+    </div>
+
+    <div class="card contacto">
+      <h2>Contacto</h2>
+      <p>📞 Teléfono: +34 600 000 000</p>
+      <p>📍 Ciudad, País</p>
+
+      <a class="btn" href="tel:+34600000000">Llamar ahora</a>
+      <br>
+      <a class="btn" href="https://wa.me/34600000000" target="_blank">WhatsApp</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Unidad de Acúfenos · Atención profesional y personalizada
+  </footer>
+
+</body>
+</html>
 
